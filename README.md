@@ -31,7 +31,7 @@ The best solution is decided based on the maximum reward.
 
 
 Advantages and Disadvantages of Reinforcement Learning
-Advantages:
+- Advantages:
 1. Reinforcement learning can be used to solve very complex problems that cannot be solved by conventional techniques.
 
 2. The model can correct the errors that occurred during the training process. 
@@ -44,7 +44,7 @@ Advantages:
 
 6. Reinforcement learning is a flexible approach that can be combined with other machine learning techniques, such as deep learning, to improve performance.
 
-Disadvantages:
+- Disadvantages:
 1. Reinforcement learning is not preferable to use for solving simple problems.
 
 2. Reinforcement learning needs a lot of data and a lot of computation
@@ -54,4 +54,4 @@ Disadvantages:
 4. Reinforcement learning can be difficult to debug and interpret. It is not always clear why the agent is behaving in a certain way, which can make it difficult to diagnose and fix problems.
 
 Conclusion
-Reinforcement learning is a powerful technique for decision-making and optimization in dynamic environments. Its applications range from robotics to personalized learning systems. However, the complexity of RL requires careful design of reward functions and significant computational resources. By understanding its principles and applications, one can leverage RL to solve intricate real-world problems.
+- Reinforcement learning is a powerful technique for decision-making and optimization in dynamic environments. Its applications range from robotics to personalized learning systems. However, the complexity of RL requires careful design of reward functions and significant computational resources. By understanding its principles and applications, one can leverage RL to solve intricate real-world problems.
