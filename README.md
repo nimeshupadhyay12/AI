@@ -85,7 +85,7 @@ e.g. Good reward can be +1, Bad reward can be -1, No reward can be 0.
 - Discount factor(γ): determines how much the agent cares about rewards in the distant future relative to those in the immediate future. It has a value between 0 and 1. Lower value encourages short–term rewards while higher value promises long-term reward
 
 
-- The Bellman equation in reinforcement learning is a mathematical formula used to determine the value of states or state-action pairs in a decision-making process. It serves as the foundation for many reinforcement learning algorithms, helping agents learn how to make optimal decisions to maximize rewards over time.
+The Bellman equation in reinforcement learning is a mathematical formula used to determine the value of states or state-action pairs in a decision-making process. It serves as the foundation for many reinforcement learning algorithms, helping agents learn how to make optimal decisions to maximize rewards over time.
 - Immediate Reward: The reward the agent receives right now.
 - Future Rewards: The rewards the agent expects to collect by acting optimally in the future.
 - The agent considers the immediate reward from its current state and action.
