@@ -75,9 +75,9 @@ What happens without Bellman Equation?
 - Value(V): Numeric representation of a state which helps the agent to find its path. V(s) here means the value of the state s.
 - Reward(R): treat which the agent gets after performing an action(a).
 
-R(s): reward for being in the state s
-R(s,a): reward for being in the state and performing an action a
-R(s,a,s’): reward for being in a state s, taking an action a and ending up in s’
+- R(s): reward for being in the state s
+- R(s,a): reward for being in the state and performing an action a
+- R(s,a,s’): reward for being in a state s, taking an action a and ending up in s’
 e.g. Good reward can be +1, Bad reward can be -1, No reward can be 0.
 
 - Action(a): set of possible actions that can be taken by the agent in the state(s). e.g. (LEFT, RIGHT, UP, DOWN)
