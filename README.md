@@ -55,3 +55,39 @@ Advantages and Disadvantages of Reinforcement Learning
 
 Conclusion
 - Reinforcement learning is a powerful technique for decision-making and optimization in dynamic environments. Its applications range from robotics to personalized learning systems. However, the complexity of RL requires careful design of reward functions and significant computational resources. By understanding its principles and applications, one can leverage RL to solve intricate real-world problems.
+
+
+
+
+## Bellman Equation 
+- According to the Bellman Equation, long-term- reward in a given action is equal to the reward from the current action combined with the expected reward from the future actions taken at the following time. Let’s try to understand first.
+
+What happens without Bellman Equation?
+
+- Initially, we will give our agent some time to explore the environment and let it figure out a path to the goal. As soon as it reaches its goal, it will back trace its steps back to its starting position and mark values of all the states which eventually leads towards the goal as V = 1.
+
+- The agent will face no problem until we change its starting position, as it will not be able to find a path towards the trophy state since the value of all the states is equal to 1. So, to solve this problem we should use Bellman Equation:
+
+- V(s)=maxa(R(s,a)+ γV(s’))
+
+- State(s): current state where the agent is in the environment
+- Next State(s’): After taking action(a) at state(s) the agent reaches s’
+- Value(V): Numeric representation of a state which helps the agent to find its path. V(s) here means the value of the state s.
+- Reward(R): treat which the agent gets after performing an action(a).
+
+R(s): reward for being in the state s
+R(s,a): reward for being in the state and performing an action a
+R(s,a,s’): reward for being in a state s, taking an action a and ending up in s’
+e.g. Good reward can be +1, Bad reward can be -1, No reward can be 0.
+
+- Action(a): set of possible actions that can be taken by the agent in the state(s). e.g. (LEFT, RIGHT, UP, DOWN)
+
+- Discount factor(γ): determines how much the agent cares about rewards in the distant future relative to those in the immediate future. It has a value between 0 and 1. Lower value encourages short–term rewards while higher value promises long-term reward
+
+
+- The Bellman equation in reinforcement learning is a mathematical formula used to determine the value of states or state-action pairs in a decision-making process. It serves as the foundation for many reinforcement learning algorithms, helping agents learn how to make optimal decisions to maximize rewards over time.
+- Immediate Reward: The reward the agent receives right now.
+- Future Rewards: The rewards the agent expects to collect by acting optimally in the future.
+- The agent considers the immediate reward from its current state and action.
+- It predicts the value of the next state, assuming it will continue to act optimally.
+- By solving this equation iteratively, the agent can learn the best strategy to maximize its total reward over time.
