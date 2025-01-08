@@ -59,7 +59,7 @@ Conclusion
 
 
 
-## Bellman Equation 
+## 2. Bellman Equation 
 - According to the Bellman Equation, long-term- reward in a given action is equal to the reward from the current action combined with the expected reward from the future actions taken at the following time. Let’s try to understand first.
 
 What happens without Bellman Equation?
@@ -94,3 +94,31 @@ The Bellman equation in reinforcement learning is a mathematical formula used to
 - The agent considers the immediate reward from its current state and action.
 - It predicts the value of the next state, assuming it will continue to act optimally.
 - By solving this equation iteratively, the agent can learn the best strategy to maximize its total reward over time.
+
+
+## 3. Markov Property
+- Markov property: The probability of a future state depends only on the current state, not on any past or future states.
+- A Markov Decision Process (MDP) is a mathematical tool that helps make optimal decisions in dynamic systems where outcomes are partially random and partially controllable. MDPs are used in many fields, including artificial intelligence, robotics, ecology, economics, healthcare, and telecommunications . A Markov Decision Process (MDP) is a way to model situations where a decision-maker chooses actions to move between different states, aiming to maximize rewards, while dealing with some uncertainty about the outcomes of their actions.
+
+  ![pic 2](https://github.com/user-attachments/assets/bfaa60f2-be7a-4a5a-bdf8-cc790e62ca7e)
+
+
+## 4. Policy v/s Plan 
+1. Policy:
+A policy is a strategy or a rule that tells the agent what action to take in any given state. It defines the agent's behavior.
+
+- Deterministic Policy: For each state, the policy specifies exactly one action.
+- Stochastic Policy: For each state, the policy specifies a probability distribution over possible actions (i.e., the agent may take different actions in the same state with certain probabilities).
+- A policy is like a "decision-making guide" for the agent, telling it what to do at each moment.
+  
+2. Plan:
+A plan refers to a sequence of actions or a set of decisions an agent will take to achieve a goal. It is the agent’s roadmap to reach a desired outcome. In some contexts, planning involves searching for the best sequence of actions in advance.
+
+- In classical planning, agents create a detailed plan beforehand, usually with perfect knowledge of the environment.
+- In reinforcement learning, an agent may learn its plan by exploring the environment and updating its knowledge through trial and error.
+- A plan is like a "predefined roadmap" that shows a step-by-step approach to achieving a goal, often learned through experience.
+  
+Key Difference:
+- A policy is an ongoing decision-making rule used in any state the agent encounters. It can be learned and refined over time.
+- A plan is usually a longer-term, goal-oriented sequence of actions, which can either be precomputed or dynamically planned as the agent learns.
+- In RL, the policy is what the agent follows during training or execution, while the plan (if needed) might be considered when figuring out how to achieve long-term objectives.
