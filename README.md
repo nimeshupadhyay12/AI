@@ -122,3 +122,39 @@ Key Difference:
 - A policy is an ongoing decision-making rule used in any state the agent encounters. It can be learned and refined over time.
 - A plan is usually a longer-term, goal-oriented sequence of actions, which can either be precomputed or dynamically planned as the agent learns.
 - In RL, the policy is what the agent follows during training or execution, while the plan (if needed) might be considered when figuring out how to achieve long-term objectives.
+
+## 5. Q-Learning 
+Q-learning is a fundamental algorithm in Reinforcement Learning (RL). It allows an agent to learn how to act optimally in a given environment by maximizing the total rewards it receives over time. Here's an intuitive breakdown:
+
+1. Key Idea: Learning by Experience
+Q-learning enables an agent to learn from its interactions with the environment. The agent doesn't need a pre-built model of the environment but instead explores and adjusts its actions based on feedback (rewards) received.
+
+2. Understanding Q-Values (Quality Values)
+Think of the Q-value as a "score" that tells the agent how good a particular action is in a specific state.
+Higher Q-values mean better actions in that state.
+The agent keeps track of these Q-values in a Q-table: a table where each cell corresponds to a state-action pair.
+
+4. Exploration vs. Exploitation
+The agent faces a choice:
+
+- Exploration: Try new actions to discover potentially better rewards.
+- Exploitation: Stick to actions with the highest known Q-values.
+This is often managed using an ε-greedy strategy, where the agent randomly explores with probability 
+ϵ, and otherwise exploits its current knowledge.
+
+5. Learning Over Time
+Initially, the Q-values are random or zero (the agent knows nothing).
+As the agent interacts with the environment, it updates its Q-values based on the feedback it receives.
+Over time, the Q-table converges to represent the optimal strategy.
+6. Why is it Powerful?
+- It works for model-free environments (the agent doesn’t need to know the environment’s dynamics).
+- It helps the agent learn optimal policies for decision-making.
+- Q-learning can be extended to more complex problems using Deep Q-Learning (DQL), where neural networks approximate the Q-values.
+Intuition in Practice
+Imagine a robot in a maze:
+
+The robot starts without a clue where the exit is.
+It explores the maze, taking actions (e.g., move up, down, left, right).
+After bumping into walls and moving closer to the exit, it receives rewards (or penalties).
+The Q-values are updated after each step, helping the robot remember which actions led to better outcomes.
+Eventually, the robot learns the best path to the exit by maximizing its total rewards.
