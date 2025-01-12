@@ -1,5 +1,5 @@
 # AI
-
+# Part 0-
 ## 1. What is reinforcement Learning
 
 Reinforcement Learning: An Overview
@@ -159,6 +159,7 @@ After bumping into walls and moving closer to the exit, it receives rewards (or 
 The Q-values are updated after each step, helping the robot remember which actions led to better outcomes.
 Eventually, the robot learns the best path to the exit by maximizing its total rewards.
 
+# Part 1 -
 
 ## 1. What is Deep Q-Learning?
 Deep Q-Learning replaces the traditional Q-table in Q-learning with a neural network to predict Q-values. This allows the agent to handle environments with an enormous number of states (too many for a Q-table).
